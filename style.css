@@ -1,0 +1,78 @@
+body {
+    background: rgb(13, 12, 20);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.time {
+    margin-bottom: 5em;
+}
+
+.clock {
+    padding-top: 3em;
+}
+
+.day, .month, .year {
+    font-size: 2em;
+}
+
+.container {
+    display: block;
+    margin: 1em auto;
+}
+
+button {
+    background: rgb(13, 12, 20);
+    color: white;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    border: 3px solid white;
+}
+
+button:hover {
+    color: rgb(46, 46, 48);
+    transition: color .5s;
+    border: 1px solid rgb(46, 46, 48);
+    cursor: pointer;
+}
+
+.time_glow {
+    font-size: 3em;
+    margin: 3em 0 1em;
+}
+
+.date {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+ul {
+    font-size: 1.5em;
+    color: rgb(46, 46, 48);
+}
+
+ul li{
+    margin: 1em;
+    display: inline-block;
+}
+
+.glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1d1924, 0 0 40px #1d1924, 0 0 50px #1d1924, 0 0 60px #1d1924, 0 0 70px #1d1924;
+    }
+  
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #242229, 0 0 40px #242229, 0 0 50px #242229, 0 0 60px #242229, 0 0 70px #242229, 0 0 80px #242229;
+    }
+}
